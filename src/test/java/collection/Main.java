@@ -35,7 +35,7 @@ public class Main {
 		System.out.println("The football team has a number of players over 11: ");
 		list.stream().forEach(e -> {
 			long count = listPlayer.stream().filter(a -> a.getTeamName().equals(e.getTeamName())).count();
-			System.out.println((count > 10) ? "Team name = "+ e.getTeamName() + "\nNumber of players = " + count : "");
+			System.out.println((count > 11) ? "Team name = "+ e.getTeamName() + "\nNumber of players = " + count : "");
 		});
 
 	}
